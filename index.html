@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final JS</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+
+    <!--Crear un HTML que contenga un script en el cual se defina un JSON formado por 10 objetos estudiantes con las siguientes propiedades:
+
+        código (tipo texto)
+        nombre (tipo texto)
+        nota (tipo numérico)
+
+    La idea es crear 4 botones con su respectiva acción.
+
+     La primera     acción es mostrar todos los objetos del JSON con sus respectivas     propiedades en pantalla.
+
+    La segunda acción es calcular la nota promedio y mostrarla en pantalla.
+
+    La tercera acción es mostrar en pantalla el estudiante con la nota mayor.
+
+    La cuarta acción es mostrar en pantalla el estudiante con la menor nota de todas.-->
+
+    <h1>Registro de Notas</h1>
+
+    <div class="button-group">
+      <a class="button" onclick="mostrarObjetos(estudiantes)">Info. Estudiantes</a>
+      <a class="button" onclick="notaPromedio2(estudiantes)">Nota Promedio</a>
+      <a class="button" onclick="notaMayor(estudiantes)">Nota Mayor</a>
+      <a class="button" onclick="notaMenor(estudiantes)">Nota Menor</a>
+    </div>
+
+    <p id="infoEstudiantes" ></p>
+    <p id="PNPrueba"></p>
+    <p id="notaMayorP"></p>
+    <p id="notaMenorP"></p>
+
+
+
+
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
